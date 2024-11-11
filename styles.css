@@ -4,6 +4,11 @@
     line-height: 1.5;
 }
 
+:root {
+    --button-color: #596D48;
+    --shadow: 4px 4px 4px lightgrey;
+}
+
 label, input {
     display: block;
 }
@@ -12,18 +17,16 @@ label, input {
     display: flex;
 }
 
-.antiquewhite {
-    background-color: antiquewhite;
-}
-
 button {
     color: white;
-    background-color: black;
+    background-color: var(--button-color);
     border-radius: 8px;
     font-size: 20px;
     height: 2.5em;
     width: 10em;
     margin: 30px 0;
+    border: 0;
+    box-shadow: var(--shadow);
 }
 
 label {
@@ -35,7 +38,7 @@ label {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(238, 238, 238);
 }
 
 input {
@@ -45,9 +48,10 @@ input {
     width: 16em;
 }
 
-.antiquewhite {
+.white {
     padding: 10px 0 30px 40px;
-    box-shadow: 0 8px 5px -5px black;
+    box-shadow: 0 4px 3px lightgrey;
+    background-color: white;
 }
 
 p, button, h2 {
@@ -65,4 +69,17 @@ fieldset {
 
 h1 {
     margin-bottom: -10px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+:focus {
+    box-shadow: var(--shadow);
 }
