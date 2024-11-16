@@ -114,7 +114,10 @@ img {
     position: absolute;
     height: 10%;
     top: 100px;
-    background-color: rgba(158, 155, 155, 0.425);
+    background-color: rgba(103, 69, 178, 0.516);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-side > p {
@@ -122,4 +125,7 @@ img {
     margin-bottom: 20px;
 }
 
-
+.overlay > h1 {
+    margin: 0;
+    padding: 0;
+}
