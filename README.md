@@ -1,4 +1,5 @@
-# odin-sign-up-form
+# The Odin Project: Sign Up Form
 
-image: [CookieJedi - Wallhaven.cc](https://wallhaven.cc/w/kwkdy7)
-image: [JT42 - Wallhaven.cc](https://wallhaven.cc/w/439qg3)
+Image Credits: [CookieJedi - Wallhaven.cc](https://wallhaven.cc/w/kwkdy7)
+
+- This is 100% for a real service that brings dinosaurs back to life
