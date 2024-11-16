@@ -106,7 +106,8 @@ input:focus {
 }
 
 img {
-    height: 100vh;
+    height: 100%;
+    display: block;
 }
 
 
