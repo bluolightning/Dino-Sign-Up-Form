@@ -1,28 +1,21 @@
-// Set overlay width
+// Set the width for the overlay and credits
 let width = document.querySelector('img').offsetWidth;
-document.querySelector('.overlay').style.width = `${width}px`;
 
-window.addEventListener('resize', function() {
-    width = document.querySelector('img').offsetWidth;
+function setWidth() {
     document.querySelector('.overlay').style.width = `${width}px`;
-});
+    document.querySelector('.credits').style.width = `${width}px`;
+}
 
+setWidth()
+window.addEventListener('resize', function() {
+    setWidth();
+});
 
 // Validate passwords
+
 let passwd = document.getElementById('passwd');
 let passwdc = document.getElementById('passwdc');
-
 let passwdValue, passwdcValue;
-
-passwd.addEventListener('input', function() {
-    passwdValue = passwd.value;
-    validatePasswd();
-});
-
-passwdc.addEventListener('input', function() {
-    passwdcValue = passwdc.value;
-    validatePasswd();
-});
 
 function validatePasswd() {
     if (passwdValue === '' || passwdcValue === '') { 
@@ -39,3 +32,13 @@ function validatePasswd() {
         console.log('invalid');
     }
 }
+
+passwd.addEventListener('input', function() {
+    passwdValue = passwd.value;
+    validatePasswd();
+});
+
+passwdc.addEventListener('input', function() {
+    passwdcValue = passwdc.value;
+    validatePasswd();
+});

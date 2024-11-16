@@ -130,3 +130,11 @@ img {
     margin: 0;
     padding: 0;
 }
+
+.credits {
+    position: absolute;
+    width: 300px;
+    top: 95%;
+    color: black;
+    text-align: center;
+}
