@@ -110,4 +110,11 @@ img {
     display: block;
 }
 
+.overlay {
+    position: absolute;
+    height: 10%;
+    top: 100px;
+    background-color: rgba(158, 155, 155, 0.425);
+}
+
 
