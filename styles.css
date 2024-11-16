@@ -23,7 +23,7 @@ button {
     border-radius: 8px;
     font-size: 20px;
     height: 2.5em;
-    width: 10em;
+    width: 13em;
     margin: 30px 0;
     border: 0;
     box-shadow: var(--shadow);
@@ -121,8 +121,9 @@ img {
 }
 
 .form-side > p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .overlay > h1 {
