@@ -1,7 +1,8 @@
 // Set the width for the overlay and credits
-let width = document.querySelector('img').offsetWidth;
+let width;
 
 function setWidth() {
+    width = document.querySelector('img').offsetWidth;
     document.querySelector('.overlay').style.width = `${width}px`;
     document.querySelector('.credits').style.width = `${width}px`;
 }
