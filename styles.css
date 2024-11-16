@@ -117,4 +117,9 @@ img {
     background-color: rgba(158, 155, 155, 0.425);
 }
 
+.form-side > p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 
