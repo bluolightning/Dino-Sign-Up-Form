@@ -1,5 +1,6 @@
 // Set the width for the overlay and credits
 let width;
+let intervalCount = 1;
 
 function setWidth() {
     width = document.querySelector('img').offsetWidth;
@@ -7,10 +8,19 @@ function setWidth() {
     document.querySelector('.credits').style.width = `${width}px`;
 }
 
-setWidth()
 window.addEventListener('resize', function() {
     setWidth();
 });
+
+// Fix incorrect overlay on page load
+
+let interval = window.setInterval(() => {
+    intervalCount++;
+    setWidth();
+    if (intervalCount >= 5) {
+        clearInterval(interval);
+    }
+}, 500);
 
 // Validate passwords
 
